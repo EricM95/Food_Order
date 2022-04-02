@@ -1,0 +1,58 @@
+/*
+    Author: Eric Man
+    Theme: Website Admin
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.custom-color {
+    background-color: #8f2e2e;
+    color: #ffffff;
+}
+
+/* Nav CSS */
+.navbar-dark {
+    color: #ffffff;
+}
+.nav-link {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #dcdde1;
+}
+
+/* Main Content CSS */
+.main-content {
+    background-color: #272727;
+    color: #9e9e9e;
+    padding: 3%;
+}
+
+.col-4 {
+    width: 20%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+}
+
+/* Footer CSS */
+
+/*.footer {
+    
+}*/
