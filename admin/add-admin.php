@@ -6,12 +6,12 @@
         <div class="wrapper">
             <h1>Add Admin</h1>
 
-            <?php 
-                if(isset($_SESSION['add'])) // Check whether session is set or not
-                {
-                    echo $_SESSION['add']; 
-                    unset($_SESSION['add']); // Remove session message
-                }
+            <?php
+            if (isset($_SESSION['add'])) // Check whether session is set or not
+            {
+                echo $_SESSION['add'];
+                unset($_SESSION['add']); // Remove session message
+            }
             ?>
 
             <form action="" method="POST" class="my-4">
@@ -67,30 +67,28 @@ if (isset($_POST['submit'])) {
         password='$password'
        ";
 
-}
 
-// Execute query and save data in database
 
-$res = mysqli_query($conn, $sql);
-if (mysqli_connect_errno()) {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
-    die();
-}
+    // Execute query and save data in database
 
-// Check whether data is inserted or not and display appropiate message
-if($res==TRUE)
-{
-   // echo "Data inserted";
-   $_SESSION['add'] = "Admin Added Successfully";
-   // Redirect
-    header("location:".SITEURL.'admin/manage-admin.php');
-}
-else
-{
-    //echo "Failed to insert data";
-    $_SESSION['add'] = "Failed to add admin";
-   // Redirect to Add Admin
-   header("location:".SITEURL.'admin/add-admin.php');
+    $res = mysqli_query($conn, $sql);
+    if (mysqli_connect_errno()) {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        die();
+    }
+
+    // Check whether data is inserted or not and display appropiate message
+    if ($res == TRUE) {
+        // echo "Data inserted";
+        $_SESSION['add'] = "<div class='success'>Admin Added Successfully</div>";
+        // Redirect
+        header("location:" . SITEURL . 'admin/manage-admin.php');
+    } else {
+        //echo "Failed to insert data";
+        $_SESSION['add'] = "<div class='error'>Failed to add admin</div>";
+        // Redirect to Add Admin
+        header("location:" . SITEURL . 'admin/add-admin.php');
+    }
 }
 
 ?>

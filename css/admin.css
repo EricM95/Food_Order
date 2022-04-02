@@ -55,6 +55,13 @@
     padding: 20px;
 }
 
+.success {
+    color: #2ed573;
+}
+
+.error {
+    color: #ff4757;
+}
 
 /* Footer CSS */
 
