@@ -51,6 +51,11 @@
     padding: 2%;
 }
 
+.mytable tbody tr td, .mytable thead tr th {
+    padding: 20px;
+}
+
+
 /* Footer CSS */
 
 /*.footer {
