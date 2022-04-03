@@ -1,4 +1,11 @@
-<?php include('../config/constants.php'); ?>
+<?php 
+
+    include('../config/constants.php'); 
+    include('login-check.php');
+    
+?>
+
+
 <html>
 
 <head>
@@ -23,6 +30,7 @@
                     <a class="nav-link" href="manage-category.php">Category</a>
                     <a class="nav-link" href="manage-food.php">Menu</a>
                     <a class="nav-link" href="manage-order.php">Order</a>
+                    <a class="nav-link" href="logout.php">Sign Out</a>
                 </div>
             </div>
         </div>
