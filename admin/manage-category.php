@@ -30,6 +30,24 @@
                 unset($_SESSION['no-category-found']);
             }
 
+            if(isset($_SESSION['update']))
+            {
+                echo $_SESSION['update'];
+                unset($_SESSION['update']);
+            }
+
+            if(isset($_SESSION['upload']))
+            {
+                echo $_SESSION['upload'];
+                unset($_SESSION['upload']);
+            }
+
+            if(isset($_SESSION['failed-remove']))
+            {
+                echo $_SESSION['failed-remove'];
+                unset($_SESSION['failed-remove']);
+            }
+
             ?>
 
             <a class="btn btn-primary my-4 fw-bold" href="<?php echo SITEURL; ?>admin/add-category.php">Add Category</a>
