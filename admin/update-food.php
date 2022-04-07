@@ -241,11 +241,15 @@ else
                                 }
 
                             }
+                            else 
+                            {
+                                $image_name = $current_image; // Default image when image is not selected
+                            }
 
                         }
                         else
                         {
-                            $image_name = $current_image;
+                            $image_name = $current_image; // Default image when button is not clicked
                         }
 
 
