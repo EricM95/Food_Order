@@ -4,11 +4,47 @@
     padding: 0 0;
     font-family: 'Roboto', Helvetica, sans-serif;
 }
+
+body {
+    background: #272727;
+    
+}
+
 .container{
     width: 80%;
     margin: 0 auto;
     padding: 1%;
 }
+
+header {
+    background-color: #8f2e2e;
+}
+
+.navbar-default a {
+    color: white;
+}
+
+.navbar-default a:hover {
+    color: #E3D400;
+}
+
+h3 {
+    color: #e3d400;
+}
+
+footer {
+    background-color: #8f2e2e;
+    color: white;
+}
+
+footer .nav-item a {
+    color: white;
+}
+
+footer .nav-item a:hover {
+    color: #dcdde1;
+}
+
 .img-responsive{
     width: 100%;
 }
@@ -21,6 +57,7 @@
 }
 .text-center{
     text-align: center;
+
 }
 .text-left{
     text-align: left;
@@ -35,11 +72,11 @@
 }
 
 a{
-    color: #ff6b81;
+    color: #9e9e9e;
     text-decoration: none;
 }
 a:hover{
-    color: #ff4757;
+    color: #8e2020;
 }
 
 .btn{
@@ -49,22 +86,20 @@ a:hover{
     border-radius: 5px;
 }
 .btn-primary{
-    background-color: #ff6b81;
+    background-color: #8f2e2e;
     color: white;
     cursor: pointer;
 }
 .btn-primary:hover{
     color: white;
-    background-color: #ff4757;
+    background-color: #8e2020;
 }
 h2{
-    color: #2f3542;
+    color: #9e9e9e;
     font-size: 2rem;
     margin-bottom: 2%;
 }
-h3{
-    font-size: 1.5rem;
-}
+
 .float-container{
     position: relative;
 }
@@ -80,13 +115,17 @@ fieldset{
     border-radius: 5px;
 }
 
+.error {
+    color: #ff4757;
+}
+
+.success {
+    padding: 2%;
+    color: green;
+}
+
 
 /* CSS for navbar section */
-
-.logo{
-    width: 10%;
-    float: left;
-}
 .menu{
     line-height: 60px;
 }
@@ -94,17 +133,10 @@ fieldset{
     list-style-type: none;
 }
 
-.menu ul li{
-    display: inline;
-    padding: 1%;
-    font-weight: bold;
-}
-
 
 /* CSS for Food SEarch Section */
 
 .food-search{
-    background-image: url(../images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -134,7 +166,7 @@ fieldset{
 
 /* CSS for Food Menu */
 .food-menu{
-    background-color: #ececec;
+    
     padding: 4% 0;
 }
 .food-menu-box{
@@ -166,15 +198,6 @@ fieldset{
     color: #747d8c;
 }
 
-
-/* CSS for Social */
-.social ul{
-    list-style-type: none;
-}
-.social ul li{
-    display: inline;
-    padding: 1%;
-}
 
 /* for Order Section */
 .order{

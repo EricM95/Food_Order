@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- Important to make website responsive -->
@@ -15,32 +16,45 @@
 
 <body>
     <!-- Navbar Section Starts Here -->
-    <section class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="#" title="Logo">
-                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
-                </a>
-            </div>
-
-            <div class="menu text-right">
-                <ul>
-                    <li>
-                        <a href="<?php echo SITEURL; ?>">Home</a>
+    <header class="navbar navbar-default navbar-expand-md custom-color navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" target="#navbarNav" aria-controls="navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav flex-row pt-2">
+                    <li class="nav-item p-2">
+                        <a class="nav-link p-2" href="<?php echo SITEURL; ?>">Home</a>
                     </li>
-                    <li>
-                        <a href="<?php echo SITEURL; ?>categories.php">Categories</a>
+                    <li class="nav-item p-2">
+                        <a class="nav-link p-2" href="<?php echo SITEURL; ?>categories.php">Categories</a>
                     </li>
-                    <li>
-                        <a href="<?php echo SITEURL; ?>foods.php">Foods</a>
+                    <li class="nav-item p-2">
+                        <a class="nav-link p-2" href="<?php echo SITEURL; ?>foods.php">Menu</a>
                     </li>
-                    <li>
-                        <a href="#">Contact</a>
+                    <li class="nav-item p-2" class="nav-item">
+                        <a class="nav-link p-2" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ms-auto">
+                    <li class="nav-item p-2">
+                        <a class="nav-link" aria-current="page" href="#">My Basket</a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a class="nav-link" aria-current="page" href="#"><i class="bi bi-box-arrow-in-right"></i>Login</a>
                     </li>
                 </ul>
             </div>
-
-            <div class="clearfix"></div>
         </div>
-    </section>
+    </header>
     <!-- Navbar Section Ends Here -->
+
+    <!-- Secondary Nav -->
+
+<nav class="subnavbar py-2" aria-label="Secondary navbar">
+    <div class="container">
+        <h3 class="brand text-center">Gardenia Chinese Takeaway</h3>
+    </div>
+</nav>
+
+    <!-- Secondary Nav End -->
