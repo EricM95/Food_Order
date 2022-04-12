@@ -162,7 +162,7 @@
             else 
             {
                 // Food not available
-                echo "<div class='error'>Food not available</div>";
+                echo "<div class='error'>No foods available</div>";
             }
 
             ?>

@@ -135,9 +135,9 @@
                 {
                     // Add food into database
                     // Get data from form
-                    $title = $_POST['title'];
-                    $description = $_POST['description'];
-                    $price = $_POST['price'];
+                    $title = mysqli_real_escape_string($conn, $_POST['title']);
+                    $description = mysqli_real_escape_string($conn, $_POST['description']);
+                    $price = mysqli_real_escape_string($conn, $_POST['price']);
                     $category = $_POST['category'];
 
                     // Check if radio buttons are checked or not#

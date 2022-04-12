@@ -126,17 +126,17 @@
                        // echo "Clicked";
                        // Get values from form
                        $id = $_POST['id'];
-                       $price = $_POST['price'];
-                       $qty = $_POST['qty'];
+                       $price = mysqli_real_escape_string($conn, $_POST['price']) ;
+                       $qty = mysqli_real_escape_string($conn, $_POST['qty']);
 
                        $total = $price * $qty;
 
                        $status = $_POST['status'];
 
-                       $c_name = $_POST['customer_name'];
-                       $c_contact = $_POST['customer_contact'];
-                       $c_email = $_POST['customer_email'];
-                       $c_address = $_POST['customer_address'];
+                       $c_name = mysqli_real_escape_string($conn, $_POST['customer_name']);
+                       $c_contact = mysqli_real_escape_string($conn, $_POST['customer_contact']);
+                       $c_email = mysqli_real_escape_string($conn, $_POST['customer_email']);
+                       $c_address = mysqli_real_escape_string($conn, $_POST['customer_address']);
 
                        // Update values
                         $sql2 = "UPDATE tbl_order SET

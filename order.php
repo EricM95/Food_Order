@@ -111,9 +111,9 @@
                 if(isset($_POST['submit']))
                 {
                     // Get values from form
-                    $food = $_POST['food'];
-                    $price = $_POST['price'];
-                    $qty = $_POST['qty'];
+                    $food = mysqli_real_escape_string($conn, $_POST['food']);
+                    $price = mysqli_real_escape_string($conn, $_POST['price']);
+                    $qty = mysqli_real_escape_string($conn, $_POST['qty']);
 
                     $total = $price * $qty;
 
@@ -121,10 +121,10 @@
 
                     $status = "Ordered";
 
-                    $customer_name = $_POST['full-name'];
-                    $customer_contact = $_POST['contact'];
-                    $customer_email = $_POST['email'];
-                    $customer_address = $_POST['address'];
+                    $customer_name = mysqli_real_escape_string($conn, $_POST['full-name']);
+                    $customer_contact = mysqli_real_escape_string($conn, $_POST['contact']);
+                    $customer_email = mysqli_real_escape_string($conn, $_POST['email']);
+                    $customer_address = mysqli_real_escape_string($conn, $_POST['address']);
 
                     // Save order in database
                     $sql2 = "INSERT INTO tbl_order SET

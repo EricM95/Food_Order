@@ -55,9 +55,9 @@ if (isset($_POST['submit'])) {
 
     // Get data from form
 
-    $full_name = $_POST['full_name'];
-    $username = $_POST['username'];
-    $password = md5($_POST['password']); // Password encryption with MD5
+    $full_name = mysqli_real_escape_string($conn, $_POST['full_name']);
+    $username = mysqli_real_escape_string($conn, $_POST['username']);
+    $password = mysqli_real_escape_string($conn, md5($_POST['password'])); // Password encryption with MD5
 
     // SQL query to save data to database
 
