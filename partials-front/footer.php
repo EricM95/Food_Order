@@ -36,14 +36,14 @@
             </div>
             <div class="col-2 col-xs-12 col-sm-2 col-md-2 float-end">
                 <h5>Address</h5>
-                <p>
+                <p style="color: white;">
                     Gardenia Chinese<br />
                     80A Church Road <br />
                     Tiptree <br />
                     Colchester <br />
                     CO5 0HB
-                </p>
-                <p>Telephone: 01621 819988</p>
+                </br></br>
+                Telephone: 01621 819988</p>
             </div>
         </div>
     </div>
