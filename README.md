@@ -11,13 +11,13 @@ Install any Text Editor (Sublime Text or Visual Studio Code or Atom or Brackets)
 3. Local Disk C: -> xampp -> htdocs -> 'this project'
 4. Local Disk C is the location where xampp was installed
 
-Open XAMPP Control Panel and Start 'Apache' and 'MySQL'
+5. Open XAMPP Control Panel and Start 'Apache' and 'MySQL'
 
-Import Database
+6. Import Database
 
 a. Open 'phpmyadmin' in your browser b. Create a Database c. Import the SQL file provided with this project
 
-Make Changes to settings
+7. Make Changes to settings
 Go to 'config' folder and Open 'constants.php' file. Then make changes on following constants
 
 ```
