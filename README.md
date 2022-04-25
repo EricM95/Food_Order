@@ -17,7 +17,7 @@ Install any Text Editor (Sublime Text or Visual Studio Code or Atom or Brackets)
 
 a. Open 'phpmyadmin' in your browser b. Create a Database c. Import the SQL file provided with this project
 
-7. Make Changes to settings
+Make Changes to settings
 Go to 'config' folder and Open 'constants.php' file. Then make changes on following constants
 
 ```
