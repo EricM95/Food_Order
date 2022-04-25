@@ -1,5 +1,4 @@
-# Food_Order
-# Pre-Requisites:
+## Pre-Requisites:
 Download and Install XAMPP 
 [Click Here to Download](https://www.apachefriends.org/download.html)
 
