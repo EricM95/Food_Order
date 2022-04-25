@@ -6,10 +6,10 @@ Download and Install XAMPP
 Install any Text Editor (Sublime Text or Visual Studio Code or Atom or Brackets)
 
 ## Installation
-Download as as Zip or Clone this project
-Move this project to Root Directory
-Local Disk C: -> xampp -> htdocs -> 'this project'
-Local Disk C is the location where xampp was installed
+1. Download as as Zip or Clone this project
+2. Move this project to Root Directory
+3. Local Disk C: -> xampp -> htdocs -> 'this project'
+4. Local Disk C is the location where xampp was installed
 
 Open XAMPP Control Panel and Start 'Apache' and 'MySQL'
 
