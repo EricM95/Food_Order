@@ -19,6 +19,7 @@ a. Open 'phpmyadmin' in your browser b. Create a Database c. Import the SQL file
 Make Changes to settings
 Go to 'config' folder and Open 'constants.php' file. Then make changes on following constants
 
+```
 <?php 
 //Start Session
 session_start();
@@ -34,4 +35,5 @@ $conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error(
 $db_select = mysqli_select_db($conn, DB_NAME) or die(mysqli_error()); //SElecting Database 
 
 ?>
+```
 Now, Open the project in your browser. It should run perfectly.
