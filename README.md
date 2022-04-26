@@ -1,5 +1,5 @@
 ## Pre-Requisites:
-Download and Install XAMPP 
+Download and Install XAMPP for Windows version 7.4.29 / PHP 7.4.29
 
 [Click Here to Download](https://www.apachefriends.org/download.html)
 
